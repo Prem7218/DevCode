@@ -47,7 +47,7 @@ const CodePlatform = () => {
 
   const splitInstance = useRef(null);
   const [language, setLanguage] = useState("Cpp");
-  const [selectedTopics, setSelectedTopics] = useState("");
+  const [selectedTopics, setSelectedTopics] = useState("String, Array, Stack, Queue, Hash Map, etc...");
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem("theme") === "dark"
   );
