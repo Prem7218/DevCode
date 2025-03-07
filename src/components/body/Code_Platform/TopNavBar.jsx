@@ -17,7 +17,7 @@ const TopNavBar = ({ setDarkMode, darkMode }) => {
         <span className="text-lg font-semibold shadow-white shadow-2xl hover:shadow-violet-200 hover:text-violet-500">
           <a href={CODEWHEELR}>
             CodeWheelr
-            <span className="ml-2 shadow-white shadow-2xl hover:shadow-yellow-200 hover:text-yellow-500">Dev-Editor (1.0)</span>
+            <span className="ml-2 shadow-white shadow-2xl hover:shadow-yellow-200 hover:text-yellow-500">Dev-Editor (1.5)</span>
           </a>
         </span>
       </div>

@@ -63,7 +63,7 @@ const LeftPanel = ({
         )}
 
         {/* 🎲 Generate New Question Button (Right) */}
-        {/* <button
+        <button
           onClick={fetchQuestion}
           disabled={checker?.disableCheck}
           className={`p-2 rounded transition ${
@@ -75,7 +75,7 @@ const LeftPanel = ({
           {checker?.disableCheck
             ? "Generating Question..."
             : "Generate LeetCode Question 🎯"}
-        </button> */}
+        </button>
       </div>
     </div>
   );

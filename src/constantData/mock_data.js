@@ -57,13 +57,13 @@ Provide a structured review that includes:
 4️⃣ ** Output of Code if in Readable format because is show in a box of width 500px & height 600 px but box is scrollable to y axis** 📝`;
 
 
-// export const QnsPROMPT1 = `Generate a well-structured DSA-style coding problem labeled as 'Dev-DSA Question:' instead of 'LeetCode-style
-//             coding problem:'. The problem should be based on the selected question `;
+export const QnsPROMPT1 = `Generate a well-structured DSA-style coding problem labeled as 'Dev-DSA Question:' instead of 'LeetCode-style
+            coding problem:'. The problem should be based on the selected question `;
 
-// export const QnsPROMPT2 = ` and cover concepts related to the DSA topic`;
+export const QnsPROMPT2 = ` and cover concepts related to the DSA topic`;
   
-// export const QnsPROMPT3 = `. Ensure that the problem statement is clear, concise, and formatted professionally, including constraints 
-//             and example cases if necessary. Do not provide the solution or function signature.`
+export const QnsPROMPT3 = `. Ensure that the problem statement is clear, concise, and formatted professionally, including constraints 
+            and example cases if necessary. Do not provide the solution or function signature.`
 
 export const MOCK_QNS = `Given an array of integers nums and an integer target, return indices of the two numbers such that they add 
             up to target. You may assume that each input would have exactly one solution.
@@ -87,39 +87,39 @@ export const Header = () => {
   );
 }
 
-// export const topics = [
-//   [
-//     "Arrays & Strings",
-//     "Linked List",
-//     "Stacks & Queues",
-//     "Recursion & Backtracking",
-//     "Binary Search & Searching",
-//   ],
-//   [
-//     "Sorting Algorithms",
-//     "Trees & BST",
-//     "Graphs (BFS, DFS)",
-//     "Dynamic Programming (DP)",
-//     "Bit Manipulation",
-//   ],
-// ];
+export const topics = [
+  [
+    "Arrays & Strings",
+    "Linked List",
+    "Stacks & Queues",
+    "Recursion & Backtracking",
+    "Binary Search & Searching",
+  ],
+  [
+    "Sorting Algorithms",
+    "Trees & BST",
+    "Graphs (BFS, DFS)",
+    "Dynamic Programming (DP)",
+    "Bit Manipulation",
+  ],
+];
 
-// export const systemDesignTopics = [
-//   [
-//     "System Design & Scalability",
-//     "OOD & SOLID Principles",
-//     "Greedy Algorithms",
-//     "Divide & Conquer",
-//     "Graph Algorithms",
-//   ],
-//   [
-//     "Concurrency & Parallel Computing",
-//     "Cache & DB Indexing",
-//     "Trie & String Algorithms",
-//     "Heap & Priority Queue",
-//     "OS Concepts",
-//   ],
-// ];
+export const systemDesignTopics = [
+  [
+    "System Design & Scalability",
+    "OOD & SOLID Principles",
+    "Greedy Algorithms",
+    "Divide & Conquer",
+    "Graph Algorithms",
+  ],
+  [
+    "Concurrency & Parallel Computing",
+    "Cache & DB Indexing",
+    "Trie & String Algorithms",
+    "Heap & Priority Queue",
+    "OS Concepts",
+  ],
+];
 
 // // 🚀 Difficulty Levels
 // export const levels = [

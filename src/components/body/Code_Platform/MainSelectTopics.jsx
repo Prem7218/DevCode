@@ -8,6 +8,7 @@ const MainSelectTopics = ({
   systemDesignTopics,
   isOpen,
   topics,
+  selectedTopic
 }) => {
 
   const disableScroll = () => {
@@ -34,10 +35,11 @@ const MainSelectTopics = ({
           onMouseLeave={enableScroll}
         >
           {/* 🔹 DSA Topics */}
-          <DSATopics setSelectedTopics={setSelectedTopics} topics={topics} />
+          <DSATopics selectedTopic={selectedTopic} setSelectedTopics={setSelectedTopics} topics={topics} />
 
           {/* 🔹 System Design Topics */}
           <SystemDesignTopics
+            selectedTopic={selectedTopic}
             systemDesignTopics={systemDesignTopics}
             setSelectedTopics={setSelectedTopics}
           />

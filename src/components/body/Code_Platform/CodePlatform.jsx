@@ -16,12 +16,12 @@ import {
   SubmitPROMPT1,
   SubmitPROMPT2,
   SubmitPROMPT3,
-  // systemDesignTopics,
-  // topics,
+  systemDesignTopics,
+  topics,
 } from "../../../constantData/mock_data";
 import RightPanel from "./rightPanel/RightPanel";
 import LeftPanel from "./leftPanel/LeftPanel";
-// import MainSelectTopics from "./MainSelectTopics";
+import MainSelectTopics from "./MainSelectTopics";
 import TopNavBar from "./TopNavBar";
 import TimerOnNav from "./TimerOnNav";
 // import { useSelector } from "react-redux";
@@ -71,10 +71,10 @@ const CodePlatform = () => {
   };
 
   // Theme Persistence
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", darkMode);
-    localStorage.setItem("theme", darkMode ? "dark" : "light");
-  }, [darkMode]);
+  // useEffect(() => {
+  //   document.documentElement.classList.toggle("dark", darkMode);
+  //   localStorage.setItem("theme", darkMode ? "dark" : "light");
+  // }, [darkMode]);
 
   // useEffect(() => {
   //   const fetchQns = async () => {
@@ -267,36 +267,24 @@ const CodePlatform = () => {
 
             {/* 🔹 Dropdown Section */}
             <div className="relative inline-block text-center ml-4">
-              <button
-                onClick={fetchQuestion}
-                disabled={checker?.disableCheck}
-                className={`p-2 rounded transition ${
-                  checker?.disableCheck
-                    ? "bg-gray-400 cursor-not-allowed"
-                    : "bg-blue-500 hover:bg-blue-600"
-                }`}
-              >
-                {checker?.disableCheck
-                  ? "Generating Question..."
-                  : "Generate LeetCode Question 🎯"}
-              </button>
               {/* 🔹 Main Button */}
-              {/* <button
+              <button
                 className="bg-red-500 hover:bg-red-700 ml-3 text-white font-semibold py-1 px-3 rounded transition duration-300"
                 onMouseEnter={() => setIsOpen(true)}
                 onMouseLeave={() => setIsOpen(false)}
               >
                 📚 DSA & System Design Topics ▼
-              </button> */}
+              </button>
 
               {/* 🔹 Dropdown (Only for Screens > 768px, Always Centered, 90% Width) */}
-              {/* <MainSelectTopics
+              <MainSelectTopics
+                selectedTopic={selectedTopics}
                 setSelectedTopics={setSelectedTopics}
-                // topics={topics}
-                // systemDesignTopics={systemDesignTopics}
+                topics={topics}
+                systemDesignTopics={systemDesignTopics}
                 setIsOpen={setIsOpen}
                 isOpen={isOpen}
-              /> */}
+              />
             </div>
           </div>
 
